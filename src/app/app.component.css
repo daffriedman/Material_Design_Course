@@ -1,0 +1,11 @@
+.mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    /* height: 100%;
+    width: 100%; */
+    /* icon size is dependent on font-size change the 
+    font-size to change the icon size */
+    font-size:500px;
+    margin-left:20%;
+    }

@@ -8,11 +8,13 @@ import{MaterialModule} from './material/material.module';
 import { MatButtonModule } from '@angular/material';
 import { TypographyComponent } from './comps/typography/typography.component';
 import { ButtonsComponent } from './comps/buttons/buttons.component';
+import { IconsComponent } from './comps/icons/icons.component';
 @NgModule({
   declarations: [
     AppComponent,
     TypographyComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,
