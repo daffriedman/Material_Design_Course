@@ -1,0 +1,27 @@
+<p>spinner-module works!</p>
+<!-- the value wil determine how complete the spinner is -->
+<mat-progress-spinner value="90"></mat-progress-spinner>
+<!-- this is the indefinite spinner good to show when 
+something is loading -->
+<hr>
+<mat-spinner *ngIf="showSpinner" color="warn"></mat-spinner>
+<button color="accent" mat-raised-button (click)="loadData()">Click me for the loadData function</button>
+<hr>
+<!-- Progress bars -->
+<!-- In Google Chrome mobile browser 
+loading of webpage usually indicated by determinate progress bar. -->
+<mat-progress-bar mode="determinate" value ="70"></mat-progress-bar>
+<hr>
+<!-- When we don’t know how much time 
+it will take to complete the process we will use indeterminate mode. -->
+<mat-progress-bar mode="indeterminate" value ="30"></mat-progress-bar>
+<hr>
+<mat-progress-bar mode="buffer" value=25 bufferValue=50></mat-progress-bar>
+<hr>
+<!-- Query mode is useful when we want to show pre loading of progress.
+
+Once the process loading starts mode should be changed to determinate or indeterminate mode to show the progress of the action.
+
+In query mode mat-progress-bar value property is ignored. -->
+
+<mat-progress-bar mode="query"></mat-progress-bar>

@@ -10,13 +10,15 @@ import { TypographyComponent } from './comps/typography/typography.component';
 import { ButtonsComponent } from './comps/buttons/buttons.component';
 import { IconsComponent } from './comps/icons/icons.component';
 import { BadgesComponent } from './comps/badges/badges.component';
+import { SpinnerModuleComponent } from './comps/spinner-module/spinner-module.component';
 @NgModule({
   declarations: [
     AppComponent,
     TypographyComponent,
     ButtonsComponent,
     IconsComponent,
-    BadgesComponent
+    BadgesComponent,
+    SpinnerModuleComponent
   ],
   imports: [
     BrowserModule,
