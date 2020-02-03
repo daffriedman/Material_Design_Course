@@ -9,12 +9,14 @@ import { MatButtonModule } from '@angular/material';
 import { TypographyComponent } from './comps/typography/typography.component';
 import { ButtonsComponent } from './comps/buttons/buttons.component';
 import { IconsComponent } from './comps/icons/icons.component';
+import { BadgesComponent } from './comps/badges/badges.component';
 @NgModule({
   declarations: [
     AppComponent,
     TypographyComponent,
     ButtonsComponent,
-    IconsComponent
+    IconsComponent,
+    BadgesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,52 @@
+<p>badges works!</p>
+
+<div>
+    <!-- this is the most simple badge you can have -->
+    <span matBadge=7>Notifications</span>
+</div>
+<hr>
+<div>
+<!-- can control the badge position with the matbadgePosition -->
+<span matBadge="1" matBadgePosition="below before">Below Before</span>
+
+</div>
+<div>
+    <span matBadge="2" matBadgePosition="below after">Below after</span>
+
+</div>
+<div>
+    <span matBadge="3" matBadgePosition="above before">Above before</span>
+
+</div>
+
+<div>
+    <span matBadge="4" matBadgePosition="above after">Above after</span>
+
+</div>
+<hr>
+<div class="sizing the badges 3 types with matbadgesizes and adding colors with matBadgeColors">
+    <div>
+       
+        <span matBadgeSize="small" matBadgeColor="accent" matBadge=6>Notifications small/ color accent</span>
+    </div>
+    <div>
+        <!-- medium is the default size and primary is the default color -->
+        <span matBadgeSize="medium" matBadgeColor="primary" matBadge=9>Notifications medium/color primary </span>
+    </div>
+    <div>
+        <!-- added the matbadge overlap set to false so that 
+        the badge does not ovelap 
+        the words within in the span -->
+        <span matBadgeSize="large" matBadgeColor="warn" matBadge=20 matBadgeOverlap = "false">Notifications large/color warn</span>
+    </div>
+</div>
+<hr>
+<div class="showing property biding for the badge ">
+    <span [matBadge] = 'notify'>Property binding badge</span>
+</div>
+<div class="how to hide the badge ">
+    <span [matBadge] = 'notify' [matBadgeHidden]='notify === 17'  >Property binding badge</span>
+</div>
+
+
+
