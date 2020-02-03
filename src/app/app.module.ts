@@ -11,6 +11,7 @@ import { ButtonsComponent } from './comps/buttons/buttons.component';
 import { IconsComponent } from './comps/icons/icons.component';
 import { BadgesComponent } from './comps/badges/badges.component';
 import { SpinnerModuleComponent } from './comps/spinner-module/spinner-module.component';
+import { NavbarsComponent } from './comps/navbars/navbars.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { SpinnerModuleComponent } from './comps/spinner-module/spinner-module.co
     ButtonsComponent,
     IconsComponent,
     BadgesComponent,
-    SpinnerModuleComponent
+    SpinnerModuleComponent,
+    NavbarsComponent
   ],
   imports: [
     BrowserModule,
