@@ -16,6 +16,7 @@ import { SidebarComponent } from './comps/sidebar/sidebar.component';
 import { MenusComponent } from './comps/menus/menus.component';
 import { ListsComponent } from './comps/lists/lists.component';
 import { GridsComponent } from './comps/grids/grids.component';
+import { ExpansionPanelsComponent } from './comps/expansion-panels/expansion-panels.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { GridsComponent } from './comps/grids/grids.component';
     SidebarComponent,
     MenusComponent,
     ListsComponent,
-    GridsComponent
+    GridsComponent,
+    ExpansionPanelsComponent
   ],
   imports: [
     BrowserModule,

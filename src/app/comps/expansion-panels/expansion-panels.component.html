@@ -1,0 +1,67 @@
+<!-- <p>expansion-panels works!</p> -->
+<!-- This is the simple expansion panel you must add a mat-expansion-panel-header -->
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+            <mat-panel-title>
+            Angular Material Expansion Panels
+            </mat-panel-title>
+            <mat-panel-description>
+            As long as it Takes..
+            </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>
+        This is what the paragraph looks like.You can use any html tag
+        that you like
+    </p>
+    <mat-action-row>
+        <button mat-button>Enroll</button>
+    </mat-action-row>
+</mat-expansion-panel>
+<hr>
+<!-- TO CREATE A ACCORDIAN PANEL -->
+<!-- the default will close the other panel when you open one of the
+other one. Set multi to true in order to allow openning multiple panels 
+in the accordian
+To hide the toggle add hideToggle -->
+<!-- there are ways to oen and close the panel programatically
+like in the other things, also to get events -->
+
+<mat-accordion multi ="true" hideToggle>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+                <mat-panel-title>
+                Angular Material Expansion Panels Accordian 1
+                </mat-panel-title>
+                <mat-panel-description>
+                As long as it Takes..
+                </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+            This is what the paragraph looks like.You can use any html tag
+            that you like
+        </p>
+        <mat-action-row>
+            <button mat-button>Enroll</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+                <mat-panel-title>
+                Angular Material Expansion Panels Accordian 2
+                </mat-panel-title>
+                <mat-panel-description>
+                As long as it Takes..
+                </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+            This is what the paragraph looks like.You can use any html tag
+            that you like
+        </p>
+        <mat-action-row>
+            <button mat-button>Enroll</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+
+
+
+</mat-accordion>
