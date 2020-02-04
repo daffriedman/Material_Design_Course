@@ -14,6 +14,7 @@ import { SpinnerModuleComponent } from './comps/spinner-module/spinner-module.co
 import { NavbarsComponent } from './comps/navbars/navbars.component';
 import { SidebarComponent } from './comps/sidebar/sidebar.component';
 import { MenusComponent } from './comps/menus/menus.component';
+import { ListsComponent } from './comps/lists/lists.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { MenusComponent } from './comps/menus/menus.component';
     SpinnerModuleComponent,
     NavbarsComponent,
     SidebarComponent,
-    MenusComponent
+    MenusComponent,
+    ListsComponent
   ],
   imports: [
     BrowserModule,
