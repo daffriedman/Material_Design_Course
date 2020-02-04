@@ -13,6 +13,7 @@ import { BadgesComponent } from './comps/badges/badges.component';
 import { SpinnerModuleComponent } from './comps/spinner-module/spinner-module.component';
 import { NavbarsComponent } from './comps/navbars/navbars.component';
 import { SidebarComponent } from './comps/sidebar/sidebar.component';
+import { MenusComponent } from './comps/menus/menus.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { SidebarComponent } from './comps/sidebar/sidebar.component';
     BadgesComponent,
     SpinnerModuleComponent,
     NavbarsComponent,
-    SidebarComponent
+    SidebarComponent,
+    MenusComponent
   ],
   imports: [
     BrowserModule,

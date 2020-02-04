@@ -1,0 +1,45 @@
+<p>menus works!</p>
+<!-- the menu will not open on itself need
+to add a template ref to the mat-menu
+and trigger it with a button that has on it
+ [matMenuTriggerFor]-->
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item>FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+</mat-menu>
+<button mat-flat-button disableRipple [matMenuTriggerFor] = "appMenu">Menu</button>
+<hr>
+<hr>
+<!-- To create nested menus -->
+<!-- to position where the menu will be use the xPosition/yPosition -->
+<mat-menu #appMenu2="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+</mat-menu>
+<button class="center" mat-flat-button disableRipple [matMenuTriggerFor] = "appMenu2">Menu</button>
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+
+</mat-menu>
+<hr>
+<hr>
+<!-- to create a dynamic menu  -->
+<mat-menu #lazyMenu = "matMenu">
+    <ng-template matMenuContent let-name="name" let-hobby="hobby">
+        <button mat-menu-item disableRipple>Settings</button>
+        <button mat-menu-item disableRipple>Log out {{name}}</button>
+        <button mat-menu-item disableRipple>{{name}}'s favorite hobby is {{hobby}}</button>
+    </ng-template>
+
+</mat-menu>
+<button mat-raised-button disableRipple
+[matMenuTriggerData]= "{name: 'Andy', hobby: 'soccer'}"
+[matMenuTriggerFor] = "lazyMenu"
+>Andy</button>
+
+<button mat-raised-button disableRipple
+[matMenuTriggerData] = "{name: 'Jack', hobby: 'tennis'}"
+[matMenuTriggerFor] = "lazyMenu"
+>Jack</button>

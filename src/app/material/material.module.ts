@@ -3,7 +3,8 @@ import { MatButtonModule, MatButtonToggleModule, MatIconModule
 , MatProgressSpinnerModule,  
 MatProgressBarModule,
 MatToolbarModule, 
-MatSidenavModule} from '@angular/material';
+MatSidenavModule,
+MatMenuModule} from '@angular/material';
 import {MatBadgeModule, MatBadge} from '@angular/material/badge'
 const MaterialComponents = [
   MatButtonModule,
@@ -13,7 +14,8 @@ const MaterialComponents = [
   MatProgressSpinnerModule,
   MatProgressBarModule,
   MatToolbarModule,
-MatSidenavModule]
+MatSidenavModule,
+MatMenuModule]
 
 
 
