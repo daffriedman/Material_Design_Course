@@ -1,0 +1,26 @@
+<p>tabs works!</p>
+<!-- This is for  basic tabs -->
+<mat-tab-group>
+    <mat-tab label="Angular">Angular Content</mat-tab>
+    <mat-tab label="React">React Content</mat-tab>
+    <mat-tab label="vue">Vue Content</mat-tab>
+</mat-tab-group>
+<hr>
+<!-- To know which tag's index (indexes start at zero) 
+    add a localRef and on the bottom add {{localref.selectedIndex}} -->
+<mat-tab-group #tabRef>
+    <mat-tab label="Angular">Angular Content</mat-tab>
+    <mat-tab label="React">React Content</mat-tab>
+    <mat-tab label="vue">Vue Content</mat-tab>
+</mat-tab-group>
+{{tabRef.selectedIndex}}
+<hr>
+<!-- To perform an operation when the tabs change 
+    you can listen to the tab change event need to bind to the
+(selectedTabChange)="" -->
+<mat-tab-group #tabRef1 (selectedTabChange)="logChange(tabRef1.selectedIndex)">
+    <mat-tab label="Angular">Angular Content</mat-tab>
+    <mat-tab label="React">React Content</mat-tab>
+    <mat-tab label="vue">Vue Content</mat-tab>
+</mat-tab-group>
+{{tabRef1.selectedIndex}}
