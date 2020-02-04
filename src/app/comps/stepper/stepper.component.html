@@ -1,0 +1,128 @@
+<p>stepper works!</p>
+<!-- Horizontal Stepper -->
+<mat-horizontal-stepper>
+    <mat-step label="Shipping Address">
+        <p>
+            Shipping Address Details
+        </p>
+    </mat-step>
+    <mat-step label="Billing Address">
+        <p>
+            Billing Address Details
+        </p>
+    </mat-step>
+
+    <mat-step label="Place Orders">
+        <p>
+            Order Details
+        </p>
+    </mat-step>
+</mat-horizontal-stepper>
+<hr>
+<!-- To add previous and next buttons -->
+<mat-horizontal-stepper>
+    <mat-step label="Shipping Address">
+        <p>
+            Shipping Address Details
+            
+        </p>
+        <div>
+            <button mat-button matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Billing Address">
+        <p>
+            Billing Address Details
+        </p>
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+            
+        </div>
+    </mat-step>
+
+    <mat-step label="Place Orders">
+        <p>
+            Order Details
+        </p>
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>
+
+<!-- To create a Linear Stepper which does not allow one to move to
+the next step untill they have first completed the previous step 
+and also to set one as optional. Here I am hard coding it 
+but ideally you would have it set to a method that would change the true and 
+false value of the completed when the user completes the task -->
+<mat-horizontal-stepper linear>
+    <mat-step label="Shipping Address" completed="true">
+        <p>
+            Shipping Address Details
+            
+        </p>
+        <div>
+            <button mat-button matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Billing Address" completed="false" optional>
+        <p>
+            Billing Address Details
+        </p>
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+            
+        </div>
+    </mat-step>
+
+    <mat-step label="Place Orders" completed="false">
+        <p>
+            Order Details
+        </p>
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>
+
+<!-- VERTICAL STEPPER -->
+<!-- All The Same Just Instead of 
+mat-horizontal you write mat-vertical 
+see below -->
+
+<mat-vertical-stepper linear>
+    <mat-step label="Shipping Address" completed="false">
+        <p>
+            Shipping Address Details
+            
+        </p>
+        <div>
+            <button mat-button matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Billing Address" completed="false" optional>
+        <p>
+            Billing Address Details
+        </p>
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+            
+        </div>
+    </mat-step>
+
+    <mat-step label="Place Orders" completed="false">
+        <p>
+            Order Details
+        </p>
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            
+        </div>
+    </mat-step>
+
+</mat-vertical-stepper>

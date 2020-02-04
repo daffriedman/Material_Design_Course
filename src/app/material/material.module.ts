@@ -10,7 +10,8 @@ MatDividerModule,
 MatGridListModule,
 MatExpansionModule,
 MatCardModule,
-MatTabsModule} from '@angular/material';
+MatTabsModule,
+MatStepperModule} from '@angular/material';
 import {MatBadgeModule, MatBadge} from '@angular/material/badge'
 const MaterialComponents = [
   MatButtonModule,
@@ -27,7 +28,8 @@ MatDividerModule,
 MatGridListModule,
 MatExpansionModule,
 MatCardModule,
-MatTabsModule
+MatTabsModule,
+MatStepperModule
 ]
 
 
