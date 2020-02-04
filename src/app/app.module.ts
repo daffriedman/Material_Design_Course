@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import{ FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,6 +12,7 @@ import { IconsComponent } from './comps/icons/icons.component';
 import { BadgesComponent } from './comps/badges/badges.component';
 import { SpinnerModuleComponent } from './comps/spinner-module/spinner-module.component';
 import { NavbarsComponent } from './comps/navbars/navbars.component';
+import { SidebarComponent } from './comps/sidebar/sidebar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +21,15 @@ import { NavbarsComponent } from './comps/navbars/navbars.component';
     IconsComponent,
     BadgesComponent,
     SpinnerModuleComponent,
-    NavbarsComponent
+    NavbarsComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
     
   ],
   providers: [],

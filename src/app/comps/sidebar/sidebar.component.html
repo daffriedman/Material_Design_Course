@@ -1,0 +1,21 @@
+<p>sidebar works!</p>
+<mat-sidenav-container>
+    <!-- by default you do not see the 
+    Sidenavbar and must add the word opened to it 
+    however once you click out of it it closes and 
+    cannot be reopened unless you do two way 
+    binding like below. Another way to open and close 
+it is through invoking the open/close methods
+ on the sidenav itself after giving it a template ref. You 
+ can also    a button click of sidenav.open() and sidenav.close(). For one toggle button do
+ sidenav.toggle()
+  -->
+        <!-- the default mat-sidenav  mode is over. you can also do 
+        push or side -->
+    <mat-sidenav (opened) = "log('Opened')" (closed)= 'log("Closed")' #sidenav mode ="side" [(opened)] = "opened">Sidenav</mat-sidenav>
+    <mat-sidenav-container>Main
+        <button (click)="opened =!opened">Toggle open button</button>
+        <button (click)="sidenav.open()">Open</button>
+        <button (click)="sidenav.close()">Close</button>
+        <button (click)="sidenav.toggle()">Toggle</button>
+</mat-sidenav-container>
