@@ -1,0 +1,15 @@
+<p>grids works!</p>
+<!-- you must specify the coloumns using cols = "" in the mat grid mat-grid-list
+and in order to specify how many coloums each tile will take up 
+you must place a colspan in the specific tile -->
+<!-- there are different ways to set the height of each tile 1)rowHeight = "100px"
+2)rowHeight= "2:1" this will render each tile half the width of the grid 
+3)rowHeight="fit style="height:200px"-->
+<!-- the next thing to do is to add gutter space inbetween the seperate tiles
+need to add a gutterSize="" -->
+<mat-grid-list cols="2" rowHeight="fit" style="height:200px" gutterSize="10px">
+<mat-grid-tile>Tile 1</mat-grid-tile>
+<mat-grid-tile>Tile 2</mat-grid-tile>
+<mat-grid-tile>Tile 3</mat-grid-tile>
+<mat-grid-tile>Tile 4</mat-grid-tile>
+</mat-grid-list>

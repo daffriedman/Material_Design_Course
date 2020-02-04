@@ -15,6 +15,7 @@ import { NavbarsComponent } from './comps/navbars/navbars.component';
 import { SidebarComponent } from './comps/sidebar/sidebar.component';
 import { MenusComponent } from './comps/menus/menus.component';
 import { ListsComponent } from './comps/lists/lists.component';
+import { GridsComponent } from './comps/grids/grids.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { ListsComponent } from './comps/lists/lists.component';
     NavbarsComponent,
     SidebarComponent,
     MenusComponent,
-    ListsComponent
+    ListsComponent,
+    GridsComponent
   ],
   imports: [
     BrowserModule,
