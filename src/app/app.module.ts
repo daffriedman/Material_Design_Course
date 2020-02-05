@@ -20,6 +20,7 @@ import { ExpansionPanelsComponent } from './comps/expansion-panels/expansion-pan
 import { CardsComponent } from './comps/cards/cards.component';
 import { TabsComponent } from './comps/tabs/tabs.component';
 import { StepperComponent } from './comps/stepper/stepper.component';
+import { InputComponent } from './comps/input/input.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { StepperComponent } from './comps/stepper/stepper.component';
     ExpansionPanelsComponent,
     CardsComponent,
     TabsComponent,
-    StepperComponent
+    StepperComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,

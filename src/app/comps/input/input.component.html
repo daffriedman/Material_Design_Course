@@ -1,0 +1,37 @@
+<p>input works!</p>
+<!-- Most basic input -->
+<mat-form-field>
+    <input matInput>
+</mat-form-field>
+<hr>
+<div>
+    
+    <mat-form-field>
+        <!-- the label name will be a placeholder and rise 
+        to the top when you begin to fill it you can set the 
+    label in the mat-from-field to floatlabel="",
+never will erase it when you start filling it out
+always will start it out on top and auto which is the 
+default -->
+<!-- if you want it to be required you add required
+in the input field you can also hide the asterik 
+by adding hideRequiredMarker into the mat-form-field-->
+        <mat-label>Name</mat-label>
+        <input matInput required>
+        <!-- to add a hint line default will be centered
+        to right align it add the align="end" in the
+    mat-hint -->
+        <mat-hint align="end">Min 2 words</mat-hint>
+    </mat-form-field>
+</div>
+<hr>
+<hr>
+<!-- You can also add appearences. The default is
+    legacy, there is also standard, fill and outline
+
+ -->
+ <!-- colors. Add in the mat form field. Can
+choose accent, warn -->
+<mat-form-field>
+    <input matInput>
+</mat-form-field>
