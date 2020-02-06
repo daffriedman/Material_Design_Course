@@ -1,0 +1,36 @@
+<p>date-picker works!</p>
+<mat-form-field>
+    <!-- This is the basic datepicker -->
+    <input matInput [matDatepicker]="myDatePicker">
+    <mat-datepicker-toggle matSuffix [for] ="myDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker></mat-datepicker>
+</mat-form-field>
+<hr>
+<hr>
+<mat-form-field>
+    <!-- This is to change the start of the  datepicker
+    to start by the year add 'startView="year"' or for multi year "startView="multi-year"" -->
+    <input matInput [matDatepicker]="myDatePicker1">
+    <mat-datepicker-toggle matSuffix [for] ="myDatePicker1"></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker1 startView="multi-year"></mat-datepicker>
+</mat-form-field>
+<hr>
+<hr>
+<mat-form-field>
+    <!-- This is to change the  datepicker
+    to set a minimum and max date-->
+    <input matInput [matDatepicker]="myDatePicker2" [min] ="minDate" [max]="maxDate">
+    <mat-datepicker-toggle matSuffix [for] ="myDatePicker2"></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker2></mat-datepicker>
+</mat-form-field>
+<hr>
+<hr>
+<mat-form-field>
+    <!-- This is to filter out that the user 
+    cannot pick specific days in the example
+he cannot choose Shabbos or Sunday-->
+    <input matInput [matDatepicker]="myDatePicker3"  [matDatepickerFilter] ="dateFilter">
+    <mat-datepicker-toggle matSuffix [for] ="myDatePicker3"></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker3></mat-datepicker>
+</mat-form-field>
+

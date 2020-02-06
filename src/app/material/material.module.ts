@@ -17,7 +17,9 @@ MatInputModule,
 MatSelectModule,
 MatAutocompleteModule,
 MatCheckboxModule,
-MatRadioModule} from '@angular/material';
+MatRadioModule,
+MatDatepickerModule,
+MatNativeDateModule} from '@angular/material';
 import {MatBadgeModule, MatBadge} from '@angular/material/badge'
 const MaterialComponents = [
   MatButtonModule,
@@ -41,7 +43,9 @@ MatInputModule,
 MatSelectModule,
 MatAutocompleteModule,
 MatCheckboxModule,
-MatRadioModule
+MatRadioModule,
+MatDatepickerModule,
+MatNativeDateModule
 ]
 
 
