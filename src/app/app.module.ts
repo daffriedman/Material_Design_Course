@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{ FormsModule} from '@angular/forms'
+import{ FormsModule,ReactiveFormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +22,7 @@ import { TabsComponent } from './comps/tabs/tabs.component';
 import { StepperComponent } from './comps/stepper/stepper.component';
 import { InputComponent } from './comps/input/input.component';
 import { SelectComponent } from './comps/select/select.component';
+import { AutocompleteComponent } from './comps/autocomplete/autocomplete.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,14 +41,16 @@ import { SelectComponent } from './comps/select/select.component';
     TabsComponent,
     StepperComponent,
     InputComponent,
-    SelectComponent
+    SelectComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

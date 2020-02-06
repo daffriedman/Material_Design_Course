@@ -14,7 +14,8 @@ MatTabsModule,
 MatStepperModule,
 MatFormFieldModule,
 MatInputModule,
-MatSelectModule} from '@angular/material';
+MatSelectModule,
+MatAutocompleteModule} from '@angular/material';
 import {MatBadgeModule, MatBadge} from '@angular/material/badge'
 const MaterialComponents = [
   MatButtonModule,
@@ -35,7 +36,8 @@ MatTabsModule,
 MatStepperModule,
 MatFormFieldModule,
 MatInputModule,
-MatSelectModule
+MatSelectModule,
+MatAutocompleteModule
 ]
 
 
