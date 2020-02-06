@@ -1,0 +1,43 @@
+<p>select works!</p>
+<!-- This is for a simple select field -->
+<mat-form-field>
+    <mat-label>Topic</mat-label>
+<mat-select [(value)] = "selectedValue" >
+    <mat-option value="first">First</mat-option>
+    <mat-option value="second">Second</mat-option>
+    <mat-option value="third">Third</mat-option>
+</mat-select>
+</mat-form-field>
+<!-- Added two way binding see the ts 
+in order to output the value of the selected
+ option. If you make a option without a value
+it will reset the value to empty
+ex:  <mat-option>None</mat-option> -->
+{{selectedValue}}
+<hr>
+<hr>
+<!-- In order to group options add 
+the mat optgroup like below -->
+<!-- In order to change the select to a checkbox
+and select multiple add the word multiple to 
+the mat-select. -->
+
+<mat-form-field>
+    <mat-label>Topic</mat-label>
+<mat-select [(value)] = "selectedValue2" multiple>
+    <mat-optgroup label="numbers1">
+        <mat-option value="first">First</mat-option>
+        <mat-option value="second">Second</mat-option>
+        <mat-option value="third">Third</mat-option>
+    </mat-optgroup>
+    
+    <mat-optgroup label="names" >
+        <mat-option value="Andrew">Andrew</mat-option>
+        <mat-option value="Bill">Bill</mat-option>
+        <mat-option value="Cathy">Cathy</mat-option>
+    </mat-optgroup>
+   
+</mat-select>
+</mat-form-field>
+{{selectedValue2}}
+{{selectedValue3}}

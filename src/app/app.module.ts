@@ -21,6 +21,7 @@ import { CardsComponent } from './comps/cards/cards.component';
 import { TabsComponent } from './comps/tabs/tabs.component';
 import { StepperComponent } from './comps/stepper/stepper.component';
 import { InputComponent } from './comps/input/input.component';
+import { SelectComponent } from './comps/select/select.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { InputComponent } from './comps/input/input.component';
     CardsComponent,
     TabsComponent,
     StepperComponent,
-    InputComponent
+    InputComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
