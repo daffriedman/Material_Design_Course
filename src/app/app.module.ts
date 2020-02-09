@@ -25,6 +25,8 @@ import { SelectComponent } from './comps/select/select.component';
 import { AutocompleteComponent } from './comps/autocomplete/autocomplete.component';
 import { CheckboxAndRadioButtonsComponent } from './comps/checkbox-and-radio-buttons/checkbox-and-radio-buttons.component';
 import { DatePickerComponent } from './comps/date-picker/date-picker.component';
+import { TooltipComponent } from './comps/tooltip/tooltip.component';
+import { SnackbarComponent } from './comps/snackbar/snackbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +48,9 @@ import { DatePickerComponent } from './comps/date-picker/date-picker.component';
     SelectComponent,
     AutocompleteComponent,
     CheckboxAndRadioButtonsComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    TooltipComponent,
+    SnackbarComponent
   ],
   imports: [
     BrowserModule,
