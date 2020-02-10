@@ -24,6 +24,7 @@ MatTooltipModule,
 MatSnackBarModule,
 MatDialogModule,
 MatTableModule,
+MatSortModule,
 
 } from '@angular/material';
 import {MatBadgeModule, MatBadge} from '@angular/material/badge'
@@ -55,7 +56,8 @@ MatNativeDateModule,
 MatTooltipModule,
 MatSnackBarModule,
 MatDialogModule,
-MatTableModule
+MatTableModule,
+MatSortModule
 ]
 
 
