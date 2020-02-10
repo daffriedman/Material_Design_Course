@@ -1,0 +1,14 @@
+<!-- This is doing it with just the ngfor
+ without the virtual scrolling.Here the Dom see
+in the source lists all the numbers.But in the virtual
+scrolling the dom keeps on adding and changing
+much better for large amounts of data -->
+<!-- <div *ngFor="let number of numbers" class="number">
+{{number}}
+</div> -->
+
+<cdk-virtual-scroll-viewport itemSize="100" class="container">
+    <div *cdkVirtualFor="let number of numbers" class="number">
+        {{number}}
+        </div>
+</cdk-virtual-scroll-viewport>
