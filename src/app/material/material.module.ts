@@ -22,7 +22,9 @@ MatDatepickerModule,
 MatNativeDateModule,
 MatTooltipModule,
 MatSnackBarModule,
-MatDialogModule
+MatDialogModule,
+MatTableModule,
+
 } from '@angular/material';
 import {MatBadgeModule, MatBadge} from '@angular/material/badge'
 const MaterialComponents = [
@@ -52,7 +54,8 @@ MatDatepickerModule,
 MatNativeDateModule,
 MatTooltipModule,
 MatSnackBarModule,
-MatDialogModule
+MatDialogModule,
+MatTableModule
 ]
 
 

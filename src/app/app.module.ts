@@ -29,6 +29,8 @@ import { TooltipComponent } from './comps/tooltip/tooltip.component';
 import { SnackbarComponent } from './comps/snackbar/snackbar.component';
 import { DialogsComponent } from './comps/dialogs/dialogs.component';
 import { DialogsExampleComponent } from './comps/dialogs-example/dialogs-example.component';
+
+import { DatatableComponent } from './comps/datatable/datatable.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +56,9 @@ import { DialogsExampleComponent } from './comps/dialogs-example/dialogs-example
     TooltipComponent,
     SnackbarComponent,
     DialogsComponent,
-    DialogsExampleComponent
+    DialogsExampleComponent,
+    
+    DatatableComponent
   ],
   entryComponents:[DialogsExampleComponent],
   imports: [
